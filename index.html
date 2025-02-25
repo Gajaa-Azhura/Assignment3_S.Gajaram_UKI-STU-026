@@ -4,147 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASSIGNMENT3</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <Section>
-        <nav class="bg-gray-900 text-white border-b border-black-800">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="flex justify-between items-center py-4">
-                    <!-- Desktop Menu -->
-                    <div class="hidden md:flex space-x-6">
-                        <img src="ASSETS/IMAGES/finallogo.png" class="w-20 h-50 items-left" alt="logo">
-                        
+   
+<body class="bg-gray-900 text-white font-sans">
+
+    <!-- Header -->
+    <header class="bg-gray-900 py-4 shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <img src="ASSETS/IMAGES/finallogo.png" alt="logo" class="w-24">
+    
+            <!-- Navigation -->
+            <nav class="flex items-center space-x-6">
+                <a href="#" class="text-gray-300 hover:text-white transition-colors text-sm md:text-base px-3 py-2 rounded-md">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors text-sm md:text-base px-3 py-2 rounded-md">About</a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors text-sm md:text-base px-3 py-2 rounded-md">Services</a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors text-sm md:text-base px-3 py-2 rounded-md">Menu</a>
+                <div class="relative group">
+                    <button class="text-gray-300 hover:text-white transition-colors text-sm md:text-base px-3 py-2 rounded-md">Pages ▼</button>
+                    <div class="relative mt-2 w-48 bg-gray-900 text-white rounded-md shadow-lg py-2 hidden group-hover:block">
+                        <a href="contact.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white text-sm">Contact</a>
                     </div>
-                    <!-- Mobile Menu -->
-                <div class="flex items-center space-x-6">
-                    <a href="#" class="text-m font-medium text-gray-300 hover:bg-gray-700 hover:text-white pt-[7px]">Home</a>
-                    <a href="#" class="text-m font-medium text-gray-300 hover:bg-gray-700 hover:text-white pt-[7px]">About</a>
-                    <a href="#" class="text-m font-medium text-gray-300 hover:bg-gray-700 hover:text-white pt-[7px]">Services</a>
-                    <a href="#" class="text-m font-medium text-gray-300 hover:bg-gray-700 hover:text-white pt-[7px]">Menu</a>
-                    <!-- Dropdown -->
-                    <div class="relative">
-                        <a href="#" class="text-white hover:text-gray-300">Pages</a>
-                        <div class="absolute   mt-2 w-48 bg-gray-900 text-white rounded-lg shadow-xl py-2 group-hover:block ">
-                            <a href="contact.html" class="block px-4 py-2 text-white hover:bg-white-700">contact</a>
-                           
-                        </div>
-                <button class="bg-grey-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded bg border-black-800">
-                    Sign Up 
-        </nav>
-    </Section>
-    <section class="relative w-full h-[700tpx] flex items-center justify-center text-white text-center bg-cover bg-center"
-    style="background-image: url(ASSETS/IMAGES/courses-1.jpg);">
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black opacity-60"></div>
-    <!-- Hero Content -->
-    <div class="relative z-10 max-w-2xl px-6">
-        <h1 class="text-4xl font-bold">From Our Kitchen to Your Table, Fresh Every Day</h1>
-        <p class="mt-4 text-gray-300">Enjoy the goodness of fresh, flavorful food delivered straight to you, ready to brighten your day with every bite!</p>
-        <a href="#" class="mt-6 inline-block bg-orange-500 px-6 py-3 rounded-full text-white font-semibold hover:bg-pink-600">
-            Explore More →
-        </a>
-    </div>
-  </section>
-  <section>
-    <div class="container mx-auto px-4 py-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            
-            <div class="relative">
-                <img src="ASSETS/IMAGES/about-1.jpg" alt="Jollof Rice" class="rounded-lg shadow-lg w-full">
-                <div class="absolute top-4 right-4 w-24 h-24 rounded-lg shadow-md overflow-hidden border-2 border-white">
-                    <img src="ASSETS/IMAGES/about-2.jpg" alt="Jollof Rice Closeup" class="w-full  object-cover">
                 </div>
-            </div>
+                <button class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors text-sm md:text-base">SignUp</button>
+            </nav>
+        </div>
 
-            <div>
-                <h2 class="text-3xl font-semibold text-gray-800 mb-4">About Us</h2>
-                <p class="text-lg text-gray-700 mb-6">
-                    <strong>Join us on our journey to celebrate the art of food.</strong>
-                </p>
-                <p class="text-gray-600 mb-6">
-                    You don't have to cook fancy or complicated masterpieces – just good food from fresh ingredients.
-                </p>
-                <p class="text-sm text-gray-500 mb-6">
-                    Julia Child
-                </p>
-                <p class="text-gray-600 mb-8">
-                    We use only the freshest ingredients, sourced locally whenever possible, to create dishes that are as wholesome as they are delicious. Our team of chefs works tirelessly to perfect every recipe, ensuring that each bite is packed with flavor and love.
-                </p>
-                <div class="flex space-x-4">
-                    <button class="bg-gray-300 hover:bg-pink-600 text-gray-700 py-2 px-6 font-semibold rounded-full">Learn More</button>
-                    <button class="bg-gray-300 hover:bg-pink-400 text-gray-700 font-semibold py-2 px-6 rounded-full">Contact Us</button>
-                </div>
-            </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="relative w-full h-screen flex items-center justify-center text-center bg-cover bg-center mt-16" 
+             style="background-image: url('ASSETS/IMAGES/courses-1.jpg"}>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-3xl px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">From Our Kitchen to Your Table, Fresh Every Day</h1>
+            <p class="text-gray-300 text-sm md:text-base mb-6">
+                Enjoy the goodness of fresh, flavorful food delivered straight to you, ready to brighten your day with every bite.
+            </p>
+            <a href="#" class="inline-block bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition-colors text-sm md:text-base">  Explore More →</a>
+        </div>
+    </section>
+    <section class=" bg-white">
+    <!-- Food Section -->
+<div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 shadow-lg rounded-lg p-6 mt-16">
+    <!-- Image Section -->
+    <div class="relative">
+        <img src="ASSETS/IMAGES/about-1.jpg" alt="Paella" class="rounded-lg shadow-lg">
+        <div class="absolute top-0 right-0 transform translate-x-4 -translate-y-4">
+            <img src="ASSETS/IMAGES/about-2.jpg" alt="Shrimp" class="w-20 h-20 rounded-lg shadow-md border-2 border-white">
         </div>
     </div>
 
-  </section>
-  <section>
-     <h5 class="text-3xl font-semibold text-gray-800 text-center mt-10 rounded-full">Our Services</h5>
-     <h2 class="text-3xl font-semibold text-White-800 text-center mt-10 ">Discover a Vareity of dishes crafted with care</h2>
-     <div class="container mx-auto px-4 py-10">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-            <div class="flex justify-center mb-4">
-                <button class="text-white-700 px-4 py-2 rounded mr-2 border-black-800">All</button>
-                <button class="text-white-700 px-4 py-2 rounded mr-2 border-black-800">Vegeterian</button>
-                <button class="text-white-700 px-4 py-2 rounded mr-2 border-black-800">Beverages</button>
-                </div>
-                <div class="absolute top-4 right-4 w-24 h-24 rounded-lg shadow-md overflow-hidden border-2 border-white">
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="rounded shadow">
-                        <img src="ASSETS/IMAGES/courses-1.jpg" alt="rice and curry" class="w-100 h-48 object-cover rounded mb-4">
-                        <h2 class="text-xl font-bold text-white-500 mb-2">rice and curry</h2>
-                        <p class="text-gray-700">A Taste in Every Bite. Experience the soul of Sri Lankan cuisine with Rice and Curry.</p>
-                    </div>
-                    <div class="rounded shadow">
-                        <img src="ASSETS/IMAGES/courses-3.jpg" alt="kOTTU" class="w-100 h-48 object-cover rounded mb-4">
-                        <h2 class="text-xl font-bold text-white-500 mb-2">Kottu</h2>
-                        <p class="text-gray-700">Cheesy, and delicious. Every bite is a perfect balance of spice and creamy goodness.</p>
-                    </div>
-                    <div class="rounded shadow">
-                        <img src="ASSETS/IMAGES/beverage-1.jpg" alt="Mango juice" class="w-100 h-48 object-cover rounded mb-4">
-                        <h2 class="text-xl font-bold text-white-500 mb-2">Mango juice</h2>
-                        <p class="text-gray-700">Refreshing and natural. Enjoy a chilled glass of fresh mango juice.</p>
-                    </div>
-                    <div class="rounded shadow">
-                        <img src="ASSETS/IMAGES/beverage-2.jpg" alt="Milk tea" class="w-100 h-48 object-cover rounded mb-4">
-                        <h2 class="text-xl font-bold text-white-500 mb-2">Milk tea</h2>
-                        <p class="text-gray-700">A warm cup of comfort. The perfect blend of tea and milk for a rich flavor.</p>
-                    </div>
+    <!-- Text Content Section -->
+    <div class="text-gray-800 m-16">
+        <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold ">About Us</span>
+        <h2 class="text-2xl font-bold mt-2">Join us on our journey to celebrate the art of food.</h2>
+        <div class="bg-gray-100 p-4 rounded-lg mt-4">
+            <p class="text-gray-600 italic">"You don’t have to cook fancy or complicated masterpieces – just good food from fresh ingredients."</p>
+            <p class="text-orange-500 font-semibold mt-2">- Julia Child</p>
+        </div>
+        <p class="text-gray-700 mt-4">We use only the freshest ingredients, sourced locally whenever possible, to create dishes that are as wholesome as they are delicious. Our team of chefs works tirelessly to perfect every recipe, ensuring that each bite is packed with flavor and love.</p>
+        
+        <!-- Buttons -->
+        <div class="mt-6 flex gap-4">
+            <a href="#" class="bg-orange-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-orange-600">Learn More<span class="ml-2">→</span></a>
+            <a href="#" class="border border-orange-500 text-orange-500 px-4 py-2 rounded-lg shadow-md hover:bg-orange-500 hover:text-white">Contact Us<span class="ml-2">→</span></a>
+        </div>
+    </div>
+</section>
+<section class="bg-orange-50 py-12">
+    <div class="container mx-auto px-4">
+        <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold items-center ">Our Services</span>
+        <!-- Heading -->
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 text-center mb-8">Discover a variety of dishes crafted with care.</h2>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1: Rice & Curry -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-orange-500">
+                <img src="ASSETS/IMAGES/courses-2.jpg" alt="Rice & Curry" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <span class="inline-block bg-orange-500 text-white text-xs px-2 py-1 rounded-full absolute top-2 right-2">Non Veg</span>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Rice & Curry</h3>
+                    <p class="text-gray-600 text-sm">A taste in every bite. Delight in the best of Sri Lankan cuisine with Rice & Curry.</p>
                 </div>
             </div>
-     </div>
-  </section>
-  <section>
-    <div class="justify-center items-center text-center bg-cover  bg-center gap-16 w-200 h-400 card">
-        <p class="text-xl font-semibold text-pink-800 text-center mt-10 shadow ">What do we do</p>
-       <h6 class="text-3xl font-semibold text-gray-800 text-center mt-10">Learn more what we do-<br>Our Services</h6>
-    </div> 
-    <div class="flex justify-center items-center text-center bg-cover bg-center">
-        <div>
-        <img src="ASSETS/IMAGES/icon-1.png" alt="Icon 1" class="rounded-lg shadow-lg w-200 h-400">
-       <p class="text-3md font-bold text-gray-800 text-center mt-10">Fresh Ingredients</p>
-       <p class="text-md font-bold text-gray-800 text-center mt-10">We use only the freshest ingredients, sourced locally whenever possible, to create dishes that are as wholesome as they are delicious.</p>
-        <button class="items-center bg-pink-400 text-violet-600">learn more</button>
+
+            <!-- Card 2: Kottu -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-orange-500">
+                <img src="ASSETS/IMAGES/courses-3.jpg" alt="Kottu" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <span class="inline-block bg-orange-500 text-white text-xs px-2 py-1 rounded-full absolute top-2 right-2">Vegetarian</span>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Kottu</h3>
+                    <p class="text-gray-600 text-sm">Cheesy, and delicious. Every bite is a perfect balance of spice and creamy goodness.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Mango Juice -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-orange-500">
+                <img src="ASSETS/IMAGES/beverage-1.jpg" alt="Mango Juice" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <span class="inline-block bg-orange-500 text-white text-xs px-2 py-1 rounded-full absolute top-2 right-2">Beverages</span>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Mango Juice</h3>
+                    <p class="text-gray-600 text-sm">Refreshing and natural. Enjoy a chilled glass of fresh mango juice.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Milk Tea -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-orange-500">
+                <img src="ASSETS/IMAGES/beverage-2.jpg" alt="Milk Tea" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <span class="inline-block bg-orange-500 text-white text-xs px-2 py-1 rounded-full absolute top-2 right-2">Beverages</span>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Milk Tea</h3>
+                    <p class="text-gray-600 text-sm">A warm cup of comfort. The perfect blend for a rich tea and milk.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="ASSETS/IMAGES/icon-2.png" alt="Icon 2" class="rounded-lg shadow-lg w-200 h-400">
-       <p class="text-3md font-bold text-gray-800 text-center mt-10">Quality and taste</p>
-       <p class="text-md font-bold text-gray-800 text-center mt-10">Our chefs are dedicated to bringing out the best asuring bold falours and rich i texture</p>
-        <button class="items-center bg-pink-400 text-violet-600">learn more</button>
+</section>
+<section class="bg-white py-12">
+    <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 text-center mb-8">
+            <span class="text-orange-500">Learn More What We Do -</span> Our Services
+        </h2>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1: Fresh Ingredients -->
+            <div class="bg-gray-100 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+                <img src="ASSETS/IMAGES/icon-1.png" alt="Fresh Ingredients" class="w-24 h-24 rounded-full bg-white p-2">
+                <div class="mb-4">
+                    <svg class="w-12 h-12 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M3 7h18M3 9h18M3 11h18M3 13h18M3 15h12M3 17h12"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Fresh Ingredients</h3>
+                <p class="text-gray-600 text-sm mb-4">We handpick the freshest, locally sourced ingredients to ensure every dish gives you a healthy, tasty life.</p>
+                <a href="#" class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 transition-colors text-sm md:text-base">Learn More</a>
+            </div>
+
+            <!-- Card 2: Quality & Taste -->
+            <div class="bg-gray-100 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+                <img src="ASSETS/IMAGES/icon-2.png" alt="Quality & Taste" class="w-24 h-24 rounded-full bg-white p-2">
+                <div class="mb-4">
+                    <svg class="w-12 h-12 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-9c-1.11 0-2.08.402-2.599 1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Quality & Taste</h3>
+                <p class="text-gray-600 text-sm mb-4">Our chefs are dedicated to bringing out the best in every recipe, ensuring bold flavors and rich textures.</p>
+                <a href="#" class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 transition-colors text-sm md:text-base">Learn More</a>
+            </div>
+
+            <!-- Card 3: Customizable Options -->
+            <div class="bg-gray-100 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+                <img src="ASSETS/IMAGES/icon-3.png" alt="Customizable Options" class="w-24 h-24 rounded-full bg-white p-2">
+                <div class="mb-4">
+                    <svg class="w-12 h-12 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Customizable Options</h3>
+                <p class="text-gray-600 text-sm mb-4">From vegan to gluten-free options, we offer menus that cater to a variety of dietary needs and preferences.</p>
+                <a href="#" class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 transition-colors text-sm md:text-base">Learn More</a>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="ASSETS/IMAGES/icon-3.png" alt="Icon 3" class="rounded-lg shadow-lg w-200 h-400">
-       <p class="text-3md font-bold text-gray-800 text-center mt-10">Customizable Options</p>
-       <p class="text-md font-bold text-gray-800 text-center mt-10">We use only the freshest ingredients, sourced locally whenever possible, to create dishes that are as wholesome as they are delicious.</p>
-        <button class="items-center bg-pink-400 text-violet-600">learn more</button>
-    </div>
-  </section>
-  <section class="relative w-full h-[700tpx] flex items-center justify-center text-white text-center bg-cover bg-center bg-opacity-60"
-  style="background-image: url(ASSETS/IMAGES/donate.jpg);">
+</section>
+<section class="relative w-full h-[700tpx] flex items-center justify-center text-white text-center bg-cover bg-center bg-opacity-60"
+  style="background-image:url(ASSETS/IMAGES/donate.jpg)">
   <!-- Overlay -->
   <div class="absolute inset-0 bg-black opacity-60"></div>
   <!-- Hero Content -->
@@ -156,122 +189,155 @@
       </a>
   </div>
 </section>
-<section >
-    <div class="flex items-center text-center bg-cover bg-center gap-16 w-200 h-400">
-        <div class="items-center text-center bg-cover bg-center gap-16 w-200 h-400">
-            <h6 class="text-xl font-semibold text-pink-800 text-center mt-10 shadow ">Our team</h6>
-    </div>
-    <div>
-        <img src="ASSETS/IMAGES/team-1.jpg" alt="Team 1" class="rounded-lg shadow-lg w-200 h-400">
-       <p class="text-3md font-bold text-gray-800 text-center mt-10"> Velvet Dawn</p>
-         <p class="text-md font-bold text-pink-800 text-center mt-10">Executive chef</p>
-    </div>
-    <div>
-        <img src="ASSETS/IMAGES/team-2.jpg" alt="Team 1" class="rounded-lg shadow-lg w-200 h-400">
-       <p class="text-3md font-bold text-gray-800 text-center mt-10"> Crimson Vale</p>
-         <p class="text-md font-bold text-pink-800 text-center mt-10">sous chef</p>
-    </div>
-    <div>
-        <img src="ASSETS/IMAGES/team-3.jpg" alt="Team 1" class="rounded-lg shadow-lg w-200 h-400">
-       <p class="text-3md font-bold text-gray-800 text-center mt-10"> Nova Drift</p>
-         <p class="text-md font-bold text-pink-800 text-center mt-10">sous chef</p>
-    </div>
-    <div>
-        <img src="ASSETS/IMAGES/team-4.jpg" alt="Team 1" class="rounded-lg shadow-lg w-200 h-400">
-       <p class="text-3md font-bold text-gray-800 text-center mt-10">Blaze storm</p>
-         <p class="text-md font-bold text-pink-800 text-center mt-10">junior chef</p>
-    </div>
-</section>
-<section class="bg-white-700 text-white text-center bg-cover bg-center gap-16 w-200 h-400">
-    <div class="items-center text-center bg-cover bg-center gap-16 w-200 h-400">
-      <p class="text-xl font-semibold text-pink-800 text-center mt-10 shadow ">Feedbacks</p>
-      <h6 class="text-3xl font-semibold text-gray-800 text-center mt-10">What our customers say</h6>
-      <div>
-        <img src="ASSETS/IMAGES/testimonial-3.jpg" alt="Testimonial 3" class="rounded-md shadow-lg w-200 h-400 items-center">
-      <p class="text-3md font-bold text-gray-800 text-center mt-10">"The food was amazing! I loved the variety of dishes and the quality of the ingredients. Will definitely be ordering again!"</p>
-      <p class="text-md font-bold text-gray-800 text-center mt-10">- Jane Doe</p>
-      </div>
-      </div>
-</section>
-<section>
-    <footer class="bg-gray-900 text-white py-10">
-        <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <!-- HomeBites Section -->
-            <div>
-              <h3 class="text-2xl font-bold mb-4 text-orange-500">HomeBites</h3>
-              <p class="text-sm text-gray-300 mb-4">
-                We take pride in serving freshly prepared dishes crafted with the finest ingredients. Whether you're here for a quick bite or a grand feast, our menu offers something for everyone.
-              </p>
-              <div class="flex space-x-4">
-                <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-                  </svg>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.94.012 4.12.06 4.627.066.987.052 1.554.052.558 0 1.05-.015 1.49-.029.421-.138.773-.39.985-.71.195-.29.355-.619.49-.973.135-.354.227-.722.282-1.099.064-.418.1-.837.128-1.256.027-.419.04-.84.04-1.259 0-4.116-3.14-7.436-7.04-7.436S4.96 3.087 4.96 7.203c0 .419.013.84.04 1.259.028.418.062.836.126 1.099.135.354.295.677.49 1.097.212.337.362.665.49 1.023.014.341.027.702.027 1.061 0 3.107-2.19 5.567-5.126 5.567s-5.126-2.46-5.126-5.567c0-.359.013-.72.027-1.061.128-.357.278-.685.49-.973.212-.32.372-.648.49-.985.014-.44.029-.879.029-1.32 0-4.117 3.14-7.437 7.04-7.437zm-3.465 6.159a3.379 3.379 0 106.758 0 3.379 3.379 0 00-6.758 0z" clip-rule="evenodd" />
-                  </svg>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M8.29 20.251c7.547 0 11.672-6.253 11.672-11.673 0-.284-.008-.568-.02-.85.799-.577 1.505-1.292 2.051-2.078-.733.326-1.52.545-2.339.641 1.072-.64 1.899-1.663 2.292-2.873-.999.593-2.105.96-3.278 1.177-.949-.945-2.069-1.526-3.37-1.526-2.543 0-4.6 2.057-4.6 4.586 0 .358.04.705.115 1.033-3.826-.192-7.201-2.026-9.487-4.792-.397.682-.627 1.475-.627 2.309 0 1.592.811 2.99 2.041 3.822-.752-.023-1.46-.23-2.088-.58-.001.013-.001.025-.001.037 0 2.213 1.561 4.047 3.643 4.453-.383.102-.783.156-1.196.156-.29 0-.575-.028-.849-.086.585 1.815 2.279 3.139 4.298 3.178-1.532 1.198-3.465 1.903-5.576 1.903-.362 0-.719-.021-1.07-.062 2.069 1.323 4.51 2.093 7.14 2.093z" />
-                  </svg>
-                </a>
-              </div>
+<section class="bg-white py-12">
+    <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 text-center mb-8">
+            <span class="text-orange-500">Team Members</span> - Let’s Meet Our Team
+        </h2>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Card 1: Velvet Dawn -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-orange-500">
+                <img src="ASSETS/IMAGES/team-1.jpg" alt="Velvet Dawn" class="w-full h-64 object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Velvet Dawn</h3>
+                    <p class="text-gray-600 text-sm">Executive Chef</p>
+                </div>
             </div>
-      
-            <!-- Address Section -->
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Address</h3>
-              <p class="text-sm text-gray-300 flex items-center mb-2">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
-                </svg>
-                123 Street, Jaffna, Sri Lanka
-              </p>
-              <p class="text-sm text-gray-300 flex items-center mb-2">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                </svg>
-                +977 123 4567
-              </p>
-              <p class="text-sm text-gray-300 flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-                info@homebites.com
-              </p>
+
+            <!-- Card 2: Crimson Vale -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-orange-500">
+                <img src="ASSETS/IMAGES/team-2.jpg" alt="Crimson Vale" class="w-full h-64 object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Crimson Vale</h3>
+                    <p class="text-gray-600 text-sm">Sous Chef</p>
+                </div>
             </div>
-      
-            <!-- Quick Links Section -->
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-              <ul class="space-y-2">
-                <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Our Services</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
-                <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
-              </ul>
+
+            <!-- Card 3: Nova Drift -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-orange-500">
+                <img src="ASSETS/IMAGES/team-3.jpg" alt="Nova Drift" class="w-full h-64 object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Nova Drift</h3>
+                    <p class="text-gray-600 text-sm">Sous Chef</p>
+                </div>
             </div>
-      
-            <!-- Newsletter Section -->
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
-              <p class="text-sm text-gray-300 mb-4">Where Every Bite Feels Like Home.</p>
-              <form class="flex">
-                <input type="email" placeholder="Your email" class="w-full p-2 rounded-l-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500">
-                <button type="submit" class="bg-orange-500 text-white p-2 rounded-r-md hover:bg-orange-600 transition-colors">SignUp</button>
-              </form>
+
+            <!-- Card 4: Blaze Storm -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-orange-500">
+                <img src="ASSETS/IMAGES/team-4.jpg" alt="Blaze Storm" class="w-full h-64 object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Blaze Storm</h3>
+                    <p class="text-gray-600 text-sm">Junior Chef</p>
+                </div>
             </div>
-          </div>
-      
-          <!-- Copyright -->
-          <p class="text-center text-sm text-gray-300 mt-8">© HomeBites. All Rights Reserved.</p>
         </div>
-      </footer>
+    </div>
 </section>
+<section class="bg-orange-50 py-12">
+        <div class="container mx-auto px-4">
+            <!-- Heading -->
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 text-center mb-8">
+                <span class="text-orange-500">Feedbacks</span> - Trusted By Thousands Of People
+            </h2>
+
+            <!-- Testimonial Card -->
+            <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-6 border border-orange-500 text-center">
+                <!-- Profile Photo -->
+                <img src="ASSETS/IMAGES/testimonial-2.jpg" alt="David Lee" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-orange-500">
+
+                <!-- Name -->
+                <h3 class="text-lg font-bold text-gray-800 mb-2">David Lee</h3>
+
+                <!-- Quote -->
+                <p class="text-gray-600 text-sm italic">&ldquo;The cheese kottu was a delight on the classic dish! The gooey melted cheese beautifully blended with the flavors of the kottu.&rdquo;</p>
+            </div>
+        </div>
+    </section>
+<section>
+    <footer class="bg-teal-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- HomeBites Column -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-orange-500">HomeBites</h3>
+                    <p class="text-sm text-gray-300 mb-4">
+                        We take pride in serving freshly prepared dishes crafted with the finest ingredients. Whether you're here for a quick bite or a grand feast, our menu offers something for everyone.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.94.012 4.12.06 4.627.066.987.052 1.554.052.558 0 1.05-.015 1.49-.029.421-.138.773-.39.985-.71.195-.29.355-.619.49-.973.135-.354.227-.722.282-1.099.064-.418.1-.837.128-1.256.027-.419.04-.84.04-1.259 0-4.116-3.14-7.436-7.04-7.436S4.96 3.087 4.96 7.203c0 .419.013.84.04 1.259.028.418.062.836.126 1.099.135.354.295.677.49 1.097.212.337.362.665.49 1.023.014.341.027.702.027 1.061 0 3.107-2.19 5.567-5.126 5.567s-5.126-2.46-5.126-5.567c0-.359.013-.72.027-1.061.128-.357.278-.685.49-.973.212-.32.372-.648.49-.985.014-.44.029-.879.029-1.32 0-4.117 3.14-7.437 7.04-7.437zm-3.465 6.159a3.379 3.379 0 106.758 0 3.379 3.379 0 00-6.758 0z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.672-6.253 11.672-11.673 0-.284-.008-.568-.02-.85.799-.577 1.505-1.292 2.051-2.078-.733.326-1.52.545-2.339.641 1.072-.64 1.899-1.663 2.292-2.873-.999.593-2.105.96-3.278 1.177-.949-.945-2.069-1.526-3.37-1.526-2.543 0-4.6 2.057-4.6 4.586 0 .358.04.705.115 1.033-3.826-.192-7.201-2.026-9.487-4.792-.397.682-.627 1.475-.627 2.309 0 1.592.811 2.99 2.041 3.822-.752-.023-1.46-.23-2.088-.58-.001.013-.001.025-.001.037 0 2.213 1.561 4.047 3.643 4.453-.383.102-.783.156-1.196.156-.29 0-.575-.028-.849-.086.585 1.815 2.279 3.139 4.298 3.178-1.532 1.198-3.465 1.903-5.576 1.903-.362 0-.719-.021-1.07-.062 2.069 1.323 4.51 2.093 7.14 2.093z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Address Column -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Address</h3>
+                    <p class="text-sm text-gray-300 flex items-center mb-2">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                        </svg>
+                        123 Street, Jaffna, Sri Lanka
+                    </p>
+                    <p class="text-sm text-gray-300 flex items-center mb-2">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        +977 123 4567
+                    </p>
+                    <p class="text-sm text-gray-300 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        info@homebites.com
+                    </p>
+                </div>
+    
+                <!-- Quick Links Column -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm md:text-base">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm md:text-base">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm md:text-base">Our Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm md:text-base">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm md:text-base">Support</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Newsletter Column -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+                    <p class="text-sm text-gray-300 mb-4">Where Every Bite Feels Like Home.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="w-full p-2 rounded-l-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm md:text-base">
+                        <button type="submit" class="bg-orange-500 text-white p-2 rounded-r-md hover:bg-orange-600 transition-colors text-sm md:text-base">SignUp</button>
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="mt-8 flex justify-between items-center text-sm text-gray-300">
+                <p>© HomeBites. All Rights Reserved.</p>
+                <p>Designed by Uni Cohort 11</p>
+            </div>
+        </div>
+    </footer>
+  </section>
 </body>
 </html>
